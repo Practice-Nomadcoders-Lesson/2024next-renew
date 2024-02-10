@@ -1,7 +1,9 @@
-export default function Tomato() {
+import Navigation from "../components/navigation";
+
+export default function Page() {
   return (
     <>
-      <h1>Hello NextJS</h1>
+      <Navigation />
     </>
   );
 }
