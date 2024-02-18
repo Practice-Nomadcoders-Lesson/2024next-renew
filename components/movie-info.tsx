@@ -1,7 +1,6 @@
 import styles from "../styles/movie-info.module.css";
 
 const getMovie = async (id: string) => {
-  console.log(`Fetching movies: ${Date.now()}`);
   await new Promise((resolve) => setTimeout(resolve, 3000));
   const response = await fetch(`${process.env.NEXT_PUBLIC_GET_MOVIES}/${id}`);
   return response.json();
