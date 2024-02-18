@@ -1,7 +1,6 @@
 import styles from "../styles/movie-videos.module.css";
 
 const getVideos = async (id: string) => {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_GET_MOVIES}/${id}/videos`
   );

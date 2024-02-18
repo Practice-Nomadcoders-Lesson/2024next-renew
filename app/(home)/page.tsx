@@ -6,7 +6,6 @@ export const metadata = {
 };
 
 const getMovies = async () => {
-  //await new Promise((resolve) => setTimeout(resolve, 5000));
   const response = await fetch(process.env.NEXT_PUBLIC_GET_MOVIES);
   const json = await response.json();
   return json;
